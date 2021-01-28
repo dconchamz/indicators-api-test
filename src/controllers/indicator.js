@@ -12,6 +12,7 @@ function indicators(req, res) {
     return res.status(200).send({
       codigo,
       nombre,
+      prueba2: 'Mensaje de prueba2',
       prueba: 'Mensaje de prueba',
       unidad_medida,
       fecha: indicator.data.serie[0].fecha,
