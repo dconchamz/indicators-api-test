@@ -20,6 +20,27 @@ variables:
   vmImageName: 'ubuntu-latest'
 
 stages:
+- stage: test
+  displayName: 'Test'
+  jobs:
+  - job: test
+    displayName: 'test'
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '12.x'
+      displayName: 'Install Node.js'
+    - script: |
+        npm install
+        npm run coverage
+      displayName: 'npm install and output coverage'
+    - script: npm test
+    - task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: Cobertura
+    summaryFileLocation: $(System.DefaultWorkingDirectory)/coverage/cobertura-coverage.xml
 - stage: Build
   displayName: Build and push stage
   jobs:  
