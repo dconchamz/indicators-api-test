@@ -30,4 +30,4 @@ function getY([x, y]) {
   return y;
 }
 
-console.log('vv')
+console.log('vvv')
