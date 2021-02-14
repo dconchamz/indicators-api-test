@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: indicators-api-app
+  name: indicators-api-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: indicators-api-app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: indicators-api-app
+    spec:
+      containers:
+      - image: nodeapitest.azurecr.io/aksnode/indicators-api-image:v1
+        name: webapp
+        imagePullPolicy: Always
+        resources: {}
+        ports:
+          - containerPort: 3000 
+status: {}
