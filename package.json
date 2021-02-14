@@ -1,0 +1,26 @@
+{
+  "name": "indicators-api-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dconchamz/indicators-api-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dconchamz/indicators-api-test/issues"
+  },
+  "homepage": "https://github.com/dconchamz/indicators-api-test#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "eslint": "^7.20.0",
+    "husky": "^5.0.9",
+    "poetic": "^1.6.0"
+  }
+}
