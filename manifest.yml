@@ -18,7 +18,7 @@ spec:
         app: indicators-api-app
     spec:
       containers:
-      - image: nodeapitest.azurecr.io/aksnode/indicators-api-image:v1
+      - image: indicatorsservice.azurecr.io/dconchamzindicatorsapitest:latest
         name: webapp
         imagePullPolicy: Always
         resources: {}
