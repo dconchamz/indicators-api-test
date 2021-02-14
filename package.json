@@ -20,7 +20,6 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "husky": "^4.2.5",
-    "poetic": "^1.5.0"
+    "husky": "^4.2.5"
   }
 }
