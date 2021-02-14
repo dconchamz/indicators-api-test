@@ -1,25 +1,36 @@
 {
-  "name": "pruebalint",
+  "name": "indicators-api-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest --maxWorkers=3 --colors --coverage --verbose=true",
+    "coverage": "jest --coverage --coverageReporters=cobertura --verbose=true"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dconchamz/pruebaLint.git"
+    "url": "git+https://github.com/dconchamz/indicators-api-test.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dconchamz/pruebaLint/issues"
+    "url": "https://github.com/dconchamz/indicators-api-test/issues"
   },
-  "homepage": "https://github.com/dconchamz/pruebaLint#readme",
-  "dependencies": {},
+  "homepage": "https://github.com/dconchamz/indicators-api-test#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  },
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
-    "husky": "^4.2.5"
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "husky": "^5.0.9",
+    "jest": "^26.6.3",
+    "poetic": "^1.6.0"
   }
 }
