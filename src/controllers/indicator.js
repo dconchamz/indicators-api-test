@@ -15,7 +15,8 @@ function indicators(req, res) {
       unidad_medida,
       fecha: indicator.data.serie[0].fecha,
       valor: indicator.data.serie[0].valor,
-      MENSAJE: 'HOLIWI :D'
+      MENSAJE: 'HOLIWI :D',
+      mensaje: 'some people tell me that i need help'
     });
   });
 }
