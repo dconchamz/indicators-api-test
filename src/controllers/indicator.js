@@ -16,7 +16,8 @@ function indicators(req, res) {
       fecha: indicator.data.serie[0].fecha,
       valor: indicator.data.serie[0].valor,
       mensaje: 'mensaje de prueba', 
-      mensaj2: 'mensaje de prueba'
+      mensaj2: 'mensaje de prueba',
+      mensjae: 'el mensaje'
     });
   });
 }
