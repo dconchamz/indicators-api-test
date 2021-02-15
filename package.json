@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "test": "jest --maxWorkers=3 --colors --coverage --verbose=true",
-    "coverage": "jest --colors --coverage --coverageReporters=cobertura --verbose=true"
+    "test": "jest --maxWorkers=3 --colors --coverage --verbose=true --coverageReporters=cobertura"
+    
   },
   "repository": {
     "type": "git",
