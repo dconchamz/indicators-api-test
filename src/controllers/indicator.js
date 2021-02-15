@@ -17,7 +17,7 @@ function indicators(req, res) {
       valor: indicator.data.serie[0].valor,
       MENSAJE: 'HOLIWI :D',
       mensaje: 'they no say nothing',
-      anothermessage: 'i think so'
+      anothermessage: 'i think so not'
     });
   });
 }
