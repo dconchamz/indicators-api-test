@@ -15,7 +15,8 @@ function indicators(req, res) {
       unidad_medida,
       fecha: indicator.data.serie[0].fecha,
       valor: indicator.data.serie[0].valor,
-      mensaje: 'mensaje de prueba'
+      mensaje: 'mensaje de prueba', 
+      mensaj2: 'mensaje de prueba'
     });
   });
 }
