@@ -36,8 +36,4 @@ stages:
           dockerfile: $(dockerfilePath)
           containerRegistry: $(dockerRegistryServiceConnection)
           tags: 'latest'   
-      - task: PublishPipelineArtifact@1
-        inputs:
-          targetPath: '$(Pipeline.Workspace)'
-          artifact: 'indicatorsArtifact'
-          publishLocation: 'pipeline'
+    
