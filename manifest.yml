@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: indicators-api-app
-  name: indicators-api-app
+    app: indicators-api-app-2
+  name: indicators-api-app-2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: indicators-api-app
+      app: indicators-api-app-2
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: indicators-api-app
+        app: indicators-api-app-2
     spec:
       containers:
       - image: indicatorsservice.azurecr.io/dconchamzindicatorsapitest:latest
@@ -31,13 +31,13 @@ status: {}
 apiVersion: v1
 kind: Service
 metadata:
-  name: indicators-api-app
+  name: indicators-api-app-2
   labels:
-    run: indicators-api-app
+    run: indicators-api-app-2
 spec:
   ports:
   - port: 3000
     protocol: TCP
   selector:
-    app: indicators-api-app
+    app: indicators-api-app-2
   type: LoadBalancer
