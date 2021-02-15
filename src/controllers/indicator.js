@@ -18,7 +18,8 @@ function indicators(req, res) {
       mensaje: 'mensaje de prueba', 
       mensaj2: 'mensaje de prueba',
       mensjae: 'el mensaje',
-      mensajito: 'valor'
+      mensajito: 'valor',
+      mensajito2: 'valor'
     });
   });
 }
