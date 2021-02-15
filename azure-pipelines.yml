@@ -36,6 +36,9 @@ stages:
         dockerfile: $(dockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: 'latest'
-    - task: Delay@1
+    - task: TriggerBuild@3
+      displayName: 'Trigger a new build of Test'
       inputs:
-        delayForMinutes: '1'
+        buildDefinition: Test
+        waitForQueuedBuildsToFinish: true
+        waitForQueuedBuildsToFinishRefreshTime: 6
