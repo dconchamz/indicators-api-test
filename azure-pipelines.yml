@@ -37,6 +37,4 @@ stages:
         dockerfile: $(dockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: 'latest'
-    - task: Delay@1
-      inputs:
-       delayForMinutes: '1'
+  
