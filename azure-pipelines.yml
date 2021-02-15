@@ -36,8 +36,8 @@ stages:
           dockerfile: $(dockerfilePath)
           containerRegistry: $(dockerRegistryServiceConnection)
           tags: 'latest'   
-      - task: PowerShell@2
+      - task: PublishPipelineArtifact@1
         inputs:
-          targetType: 'inline'
-          script: 'Start-Sleep -Seconds 60'
-          errorActionPreference: 'continue'
+          targetPath: '$(Pipeline.Workspace)'
+          artifact: 'indicatorsArtifact'
+          publishLocation: 'pipeline'
