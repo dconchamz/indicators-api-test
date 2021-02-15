@@ -16,7 +16,7 @@ function indicators(req, res) {
       fecha: indicator.data.serie[0].fecha,
       valor: indicator.data.serie[0].valor,
       MENSAJE: 'HOLIWI :D',
-      mensaje: 'some people tell me that i need help'
+      mensaje: 'they no say nothing'
     });
   });
 }
