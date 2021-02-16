@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "test": "jest --colors --coverage --coverageReporters=cobertura --verbose=true",
-    "coverage": "jest --coverage --coverageReporters=cobertura --verbose=true"
+    "test": "jest --colors --coverage --coverageReporters=cobertura --verbose=true"
   },
   "repository": {
     "type": "git",
