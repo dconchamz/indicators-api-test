@@ -35,3 +35,8 @@ steps:
     summaryFileLocation: $(System.DefaultWorkingDirectory)/coverage/cobertura-coverage.xml
     failIfCoverageEmpty: true
   displayName: Publish code coverage results
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
