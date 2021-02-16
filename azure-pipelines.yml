@@ -28,7 +28,7 @@ steps:
     testResultsFormat: 'JUnit'
     testResultsFiles: '$(System.DefaultWorkingDirectory)/test-report.xml'
     mergeTestResults: true
- 
+  displayName: Publish code coverage results
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: Cobertura
