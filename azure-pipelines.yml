@@ -18,3 +18,11 @@ steps:
 - script: |
     npm install
   displayName: 'npm install and build'
+- script: |
+    npm install
+  displayName: 'npm install and build'
+- task: Npm@1
+  inputs:
+    command: custom
+    customCommand: 'test'
+  displayName: Run Tests
