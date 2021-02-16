@@ -26,7 +26,7 @@ stages:
         npm install
         npm run coverage
       displayName: 'npm install and output coverage'
-    - script: npm test
+    - script: npm run test
     - task: PublishCodeCoverageResults@1
       inputs:
         codeCoverageTool: Cobertura
