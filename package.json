@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "test": "jest —-ci --reporters=jest-unit --maxWorkers=3 --colors --coverage --verbose=true",
+    "test": "jest --colors --coverage --coverageReporters=cobertura --verbose=true",
     "coverage": "jest --coverage --coverageReporters=cobertura --verbose=true"
   },
   "repository": {
