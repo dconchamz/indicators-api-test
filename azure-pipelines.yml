@@ -26,3 +26,11 @@ steps:
     command: custom
     customCommand: 'test'
   displayName: Run Tests
+ 
+- task: PublishTestResults@2
+  inputs:
+     testResultsFormat: 'JUnit'
+     testResultsFiles: 'junit.xml'
+     mergeTestResults: true
+     testRunTitle: ‘Jest Unit Tests’
+  displayName: Publish test results
