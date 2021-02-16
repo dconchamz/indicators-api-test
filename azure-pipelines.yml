@@ -21,13 +21,12 @@ steps:
 - task: Npm@1
   inputs:
     command: custom
-    customCommand: 'run test-ci'
+    customCommand: 'run test'
   displayName: Run Tests
  
-- task: PublishTestResults@2
+- task: PublishCodeCoverageResults@1
   inputs:
-     testResultsFormat: 'JUnit'
-     testResultsFiles: 'junit.xml'
-     mergeTestResults: true
-     testRunTitle: ‘Jest Unit Tests’
-  displayName: Publish test results
+    codeCoverageTool: Cobertura
+    summaryFileLocation: $(System.DefaultWorkingDirectory)/coverage/cobertura-coverage.xml
+    failIfCoverageEmpty: true
+  displayName: Publish code coverage results
