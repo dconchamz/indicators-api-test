@@ -15,7 +15,8 @@ function indicators(req, res) {
       unidad_medida,
       fecha: indicator.data.serie[0].fecha,
       valor: indicator.data.serie[0].valor,
-      mensaje: 'cualquier wea yo soy tetagang'
+      mensaje: 'cualquier wea yo soy tetagang',
+      mensaje: 'otro'
     });
   });
 }
