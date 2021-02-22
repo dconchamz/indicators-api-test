@@ -14,9 +14,7 @@ function indicators(req, res) {
       nombre,
       unidad_medida,
       fecha: indicator.data.serie[0].fecha,
-      valor: indicator.data.serie[0].valor,
-      valor: 'otro valor',
-      otros: 'valoes kejejeeje'
+      valor: indicator.data.serie[0].valor
     });
   });
 }
