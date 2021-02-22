@@ -16,7 +16,8 @@ function indicators(req, res) {
       fecha: indicator.data.serie[0].fecha,
       valor: indicator.data.serie[0].valor,
       mensajeDePrueba: 'Mensaje de prueba poc',
-      mensaje2: 'mensaje otro'
+      mensaje2: 'mensaje otro',
+      mensaje3: 'mensaje otro'
     });
   });
 }
