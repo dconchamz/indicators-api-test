@@ -16,10 +16,10 @@ spec:
         app: indicators-api-app
     spec:
       containers:
-      - image: indicatorsservice.azurecr.io/dconchamzindicatorsapitest:latest
-        name: webapp
-        imagePullPolicy: Always
-        resources: {}
-        ports:
-          - containerPort: 3000 
+        - image: indicatorsservice.azurecr.io/dconchamzindicatorsapitest:##BUILD_ID##
+          name: webapp
+          imagePullPolicy: Always
+          resources: {}
+          ports:
+            - containerPort: 3000
       restartPolicy: Always
