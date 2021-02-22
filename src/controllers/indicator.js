@@ -16,7 +16,8 @@ function indicators(req, res) {
       fecha: indicator.data.serie[0].fecha,
       valor: indicator.data.serie[0].valor,
       mensaje: 'cualquier wea yo soy tetagang',
-      mensaje: 'otro'
+      mensaje: 'otro',
+      valores: 'el tetatgan'
     });
   });
 }
