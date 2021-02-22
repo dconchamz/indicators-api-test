@@ -14,10 +14,7 @@ function indicators(req, res) {
       nombre,
       unidad_medida,
       fecha: indicator.data.serie[0].fecha,
-      valor: indicator.data.serie[0].valor,
-      mensaje: 'cualquier wea yo soy tetagang',
-      mensaje: 'otro',
-      valores: 'el tetatgan'
+      valor: indicator.data.serie[0].valor
     });
   });
 }
